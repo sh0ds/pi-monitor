@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
                 const pistats = "pistats.json";
-                const monitorCard = document.querySelector(".pi-monitor-card");
-                const footer = document.querySelector(".site-footer");
 
                 // -- FETCH & DISPLAY STATS --
                 const updateStats = () => {
