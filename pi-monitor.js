@@ -32,30 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateStats();
 
                 setInterval(updateStats, 3000); // set to the interval you set in your shell script
-
-                // -- FLOATING CARD SCROLL --
-                if (monitorCard && footer) {
-                    const adjustPosition = () => {
-                        const footerRect = footer.getBoundingClientRect();
-                        const windowHeight = window.innerHeight;
-
-                        const visibleFooterHeight = windowHeight - footerRect.top;
-                    
-                        if (visibleFooterHeight > 0) {
-
-                            monitorCard.style.bottom = `${visibleFooterHeight + 20}px`;
-                        } else {
-
-                            monitorCard.style.bottom = "20px";
-                        }
-                    };
-
-                    // attach to scroll and resize
-                    window.addEventListener("scroll", adjustPosition, { passive: true });
-                    window.addEventListener("resize", adjustPosition, { passive: true });
-        
-        
-                    adjustPosition();
-                }
-
-});
