@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateStats();
 
                 setInterval(updateStats, 3000); // set to the interval you set in your shell script
+});
