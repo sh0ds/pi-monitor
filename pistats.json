@@ -1,0 +1,6 @@
+{
+    "uptime": "$UPTIME",
+    "temp": "$CPU_TEMP",
+    "cpu_load": "$CPU_LOAD",
+    "ram_usage": "$RAM_USAGE"
+}
