@@ -1,4 +1,4 @@
-A live CPU/RAM monitor you can embed in your website.
+A live CPU/RAM monitor you can embed in your website, as seen on https://sh0ds.dev
 
 There are no requirements, as it uses only pre-installed / Pi-packages.
 
