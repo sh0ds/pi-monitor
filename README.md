@@ -1,5 +1,7 @@
 
-![π-monitor Logo](/imgs/pim-logo-full.png)
+<img src="imgs/pim-logo-full.png" 
+alt="pi-monitor logo" width="350"
+style="display: block; margin: auto">
 
 #  π-monitor
 
