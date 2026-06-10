@@ -9,7 +9,7 @@ A live CPU/RAM monitor you can embed in your website.
 
 ## Description
 
-A little app that uses a bash script and some preinstalled packages on the RPi 5 to monitor CPU-usage, temperature, RAM-usage and uptime and saves them into a .json-file, which then can be fetched with JS to display on your website.
+A little app I made for my website that uses a bash script and some preinstalled packages on the RPi 5 to monitor CPU-usage, temperature, RAM-usage and uptime and saves them into a .json-file, which then can be fetched with JS to display on your website. Check out https://sh0ds.dev to see it in action.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ A little app that uses a bash script and some preinstalled packages on the RPi 5
 
 ### Installing
 
-Just clone the repo and put all files (except the bash script) where your website is stored on your RPi.
+Just clone the repo and put all files (except the bash script) where your website is stored on your RPi. Check the example.html to see how to embed it.
 
 ### Executing program
 
