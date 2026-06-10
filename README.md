@@ -1,18 +1,52 @@
+
+![π-monitor Logo](/imgs/pim-logo-full.png)
+
+#  π-monitor
+
 A live CPU/RAM monitor you can embed in your website.
 
-There are no requirements, as it uses only pre-installed / Pi-packages.
+## Description
 
-To install, simply put the files into your website folder and paste this into the html-page you want it in:
+A little app that uses a bash script and some preinstalled packages on the RPi 5 to monitor CPU-usage, temperature, RAM-usage and uptime and saves them into a .json-file, which then can be fetched with JS to display on your website.
+
+## Getting Started
+
+### Dependencies
+
+**vcgencmd**, which should come pre-installed on RPi.
+
+### Installing
+
+Just clone the repo and put all files (except the bash script) where your website is stored on your RPi.
+
+### Executing program
 
 ```
-<div class="pi-monitor-card">
-    <img src="pim-logo.png">
-    <p id="pi-stats">Loading Pi5 stats...</p>
-</div>
-
-<script src="pi-monitor.js"></script>`
+chmod +x /path/to/your/script/update_stats.sh
+sudo /path/to/your/script/update_stats.sh
 ```
 
-(see test_page.html for an example)
+The default timer for refreshing the file is 3 seconds, but you can change that to your liking. Just note that if you change it in the bash script, you should also change it in the .js-file.
 
-currently only works on Pi because the bash script uses vcgencmd for temperature, but I plan to extend compatibility in the near future. (maybe not)
+## Help
+
+Should vcgencmd not be installed, ensure you are on a RPi (duh) and do:
+
+```
+sudo apt install update
+sudo apt install upgrade
+sudo rpi-update
+sudo reboot
+```
+
+After reboot:
+
+```
+vcgencmd version
+```
+
+and it should be installed.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
