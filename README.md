@@ -14,7 +14,7 @@ A little app I made for my website that uses a bash script and some preinstalled
 
 ### Installing
 
-Just clone the repo and put all files (except the bash script) where your website is stored on your RPi. Check the example.html to see how to embed it. Change the path in the bash script to the folder where your index.html is located.
+Just clone the repo and put all files (except the bash script) where your website is stored on your RPi. Check the example.html to see how to embed it. Change the path in the bash script to your liking, preferably to the path where "pi-monitor.js" is located.
 
 ### Executing program
 
