@@ -1,8 +1,3 @@
-
-<img src="imgs/pim-logo-full.png" 
-alt="pi-monitor logo" width="350"
-style="display: block; margin: auto">
-
 #  π-monitor
 
 A live CPU/RAM monitor you can embed in your website.
